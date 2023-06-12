@@ -15,6 +15,16 @@ local plugins ={
         "gopls",
       },
     },
+    -- Null LS
+    {
+      "jose-elias-alvarez/null-ls.nvim",
+        -- Filetypes
+      ft = "go",
+      opts = function ()
+        return require "custom.configs.null-ls"
+      end
+
+    },
   },
 }
 return plugins
