@@ -17,6 +17,9 @@ lspconfig.gopls.setup {
       completeUnimported = true,
       -- Enable other settings See https://github.com/golang/tools/blob/master/gopls/doc/settings.md
       usePlaceholders = true,
+      analyses = {
+        unusedparams = true,
+      }
     }
   }
 }
